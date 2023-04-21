@@ -1,0 +1,154 @@
+body {
+   width: 375px;
+   font-family: sans-serif;
+}
+.topcontainer{
+   width: 100%;
+   max-width: 768;
+   text-align: right;
+   display:flex;
+   background-color: rgb(93, 37, 223);
+}
+.shapes{
+   width: 100%;
+   display: flex;
+   text-align: right;
+   align-items: center;
+   justify-content: right;
+   color: rgb(205, 174, 255);
+}
+.shapes div{
+   margin-right: 5px;
+}
+.square{
+   font-size: 25px;
+   margin-bottom: 2px;
+}
+.circle{
+   font-size: 27px;
+}
+.triangle{
+   margin-top: 3px;
+}
+nav{
+   display: flex;
+   background-color: rgb(108, 46, 253);
+   display: flex;
+   align-items: center;
+   gap: 35px;
+   padding: 0 5px;
+   color: white;
+}
+span{
+   margin-left: 10px;
+}
+.contacts{
+   margin-right: auto;
+}
+.fa-ellipsis-vertical{
+   margin-right: 10px;
+}
+
+
+form{
+   width: 100%;
+   display:grid;
+   grid-template-columns: repeat(14, 1fr);
+   grid-template-rows: repeat(7, 35px);
+   grid-template-areas: 
+   "pi pi name name name name name name name name name name name name"
+   "phi phi phone phone phone phone phone phone phone label label label label label"
+   "li li ad ad ad ad ad ad ad ad ad ad ad ad"
+   ". . city city city city city city city city city city city city"
+   ". . st st st st st st zip zip zip zip zip zip"
+   "ei ei email email email email email email email email email email email email"
+   "bdi bdi bd bd bd bd bd bd bd bd bd bd bd bd";
+   gap: 10px;
+   color: var(--textdark);
+}
+.type2field *{
+   color:var(--textlight);
+}
+.pi{
+   display: flex;
+   margin: auto;
+   align-items: center;
+   grid-area: pi;
+}
+.name{
+   grid-area: name;
+}
+.phi{
+   display: flex;
+   margin: auto;
+   align-items: center;
+   grid-area: phi;
+}
+.phone{
+   grid-area: phone;
+}
+.label{
+   grid-area: label;
+}
+.li{
+   display: flex;
+   margin: auto;
+   align-items: center;
+   grid-area: li;
+}
+.ad{
+   grid-area: ad;
+}
+.city{
+   grid-area: city;
+}
+.st{
+   grid-area: st;
+}
+.zip{
+   grid-area: zip;
+}
+.ei{
+   display: flex;
+   margin: auto;
+   align-items: center;
+   grid-area: ei;
+}
+.email{
+   grid-area: email;
+}
+.bdi{
+   display: flex;
+   margin: auto;
+   align-items: center;
+   grid-area: bdi;
+}
+.bd{
+   grid-area: bd;
+}
+
+.pi, .phi, .li, .ei, .bdi{
+   width: 2fr;
+}
+.name, .ad, .city, .email, .bd{
+   width: 12fr;
+}
+.phone{
+   width: 7fr;
+}
+
+.type1field{
+   border-left: none;
+   border-right: none;
+   border-top: none;
+   border-bottom: solid 1px darkgrey;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+input[type=number] {
+   -moz-appearance: textfield;
+}
